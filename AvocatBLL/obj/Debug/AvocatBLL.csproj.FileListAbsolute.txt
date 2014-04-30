@@ -1,0 +1,7 @@
+C:\Users\MugiwaraNoShanks\Documents\Visual Studio 2008\Evenius\Avocat\AvocatBLL\bin\Debug\AvocatBLL.dll
+C:\Users\MugiwaraNoShanks\Documents\Visual Studio 2008\Evenius\Avocat\AvocatBLL\bin\Debug\AvocatBLL.pdb
+C:\Users\MugiwaraNoShanks\Documents\Visual Studio 2008\Evenius\Avocat\AvocatBLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\MugiwaraNoShanks\Documents\Visual Studio 2008\Evenius\Avocat\AvocatBLL\obj\Debug\AvocatBLL.dll
+C:\Users\MugiwaraNoShanks\Documents\Visual Studio 2008\Evenius\Avocat\AvocatBLL\obj\Debug\AvocatBLL.pdb
+C:\Users\MugiwaraNoShanks\Documents\Visual Studio 2008\Evenius\Avocat\AvocatBLL\bin\Debug\AvocatDAL.dll
+C:\Users\MugiwaraNoShanks\Documents\Visual Studio 2008\Evenius\Avocat\AvocatBLL\bin\Debug\AvocatDAL.pdb

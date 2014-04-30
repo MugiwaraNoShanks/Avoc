@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A525B6A9-6831-48EA-9221-1D22E54D28BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Avocat</RootNamespace>
+    <AssemblyName>Avocat</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientEdit.Designer.cs">
+      <DependentUpon>ClientEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuration.Designer.cs">
+      <DependentUpon>Configuration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderEvents.Designer.cs">
+      <DependentUpon>FolderEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderNumbers.Designer.cs">
+      <DependentUpon>FolderNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderProperties.Designer.cs">
+      <DependentUpon>FolderProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClientEdit.resx">
+      <DependentUpon>ClientEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration.resx">
+      <DependentUpon>Configuration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderEvents.resx">
+      <DependentUpon>FolderEvents.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderNumbers.resx">
+      <DependentUpon>FolderNumbers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderProperties.resx">
+      <DependentUpon>FolderProperties.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm_Juridiction.resx">
+      <DependentUpon>SubForm_Juridiction.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SubForm_Juridiction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm_Juridiction.Designer.cs">
+      <DependentUpon>SubForm_Juridiction.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_background_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clients.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audience.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_background_clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sub_button_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sub_button_background_default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closebtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GPb_background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GPb_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GPb_background_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AudMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AvocatBLL\AvocatBLL.csproj">
+      <Project>{4B5F6C80-0C10-40AB-B2F1-25D8AAF97EF1}</Project>
+      <Name>AvocatBLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\court.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerGroup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerType.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
